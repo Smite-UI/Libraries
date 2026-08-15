@@ -17,6 +17,7 @@ Zero Dependencies — drop it in and use it instantly
 Perfect for configs, vaults, local databases, automation tools, and anything that needs safe, guaranteed writes.
 
 🧠 Why AtomicLib Exists
+
 Atomic file operations are easy to get wrong.
 AtomicLib gives you a minimal, production‑ready implementation that’s readable, stable, and correct — no frameworks, no over‑engineering.
 
@@ -34,15 +35,14 @@ print(binaryfile.readbinary("data.bin"))
 📦 Included in Download
 AtomicLib/ module folder
 
-atomic.py
-
-__init__.py
+AtomicLib.py
 
 README.md
 
 Ready‑to‑use ZIP package
 
 🧩 Use Cases
+
 Scenario	Why AtomicLib Works
 Config/state files	Prevents corruption during writes
 Vaults	Guarantees integrity under concurrency
