@@ -46,12 +46,6 @@ class file:
             except FileNotFoundError:
                 pass
 
-class binaryfile:
-    def __init__(self):
-
-        FileName = ""
-        data = ""
-        
     def writebinary(path: str, data: bytes | str):
         temp = path + ".tmp"
         mode = "wb" if isinstance(data, bytes) else "w"
@@ -72,5 +66,4 @@ class binaryfile:
             with open(path, "rb") as f:
                 read_info = f.read()
                 return read_info
-        
     
