@@ -1,4 +1,5 @@
 AtomicLib — True Atomic File I/O for Python
+
 A zero‑dependency Python micro‑library providing real atomic file operations for text, bytes, binary blobs, and bytearrays.
 Built for reliability, simplicity, and correctness — no bloat, no noise, just atomicity done right.
 
@@ -66,6 +67,7 @@ python
 data = bytearray([10, 20, 30])
 binaryfile.writebinary("buffer.bin", data)
 print(binaryfile.readbinary("buffer.bin"))
+
 🔐 License — Perpetual Personal‑Use License
 You are granted a perpetual, non‑exclusive, non‑transferable license to use AtomicLib for personal, non‑commercial purposes only.
 
