@@ -2,89 +2,79 @@ AtomicLib — True Atomic File I/O for Python
 A zero‑dependency Python micro‑library providing real atomic file operations for text, bytes, binary blobs, and bytearrays.
 Built for reliability, simplicity, and correctness — no bloat, no noise, just atomicity done right.
 
-• Atomic Read** — thread‑safe reads with local locks
+⚙️ Features
+Atomic Write — temp‑write → flush → fsync → atomic replace
 
-• Atomic Delete — safe removal without race conditions
+Atomic Read — thread‑safe reads with local locks
 
-• Binary Support — atomic bytes, bytearray, and binary blob I/O
+Atomic Delete — safe removal without race conditions
 
-• Zero Dependencies — pure Python, drop‑in ready
+Binary Support — atomic bytes, bytearray, and binary blob I/O
 
-• Cross‑platform — Windows, macOS, Linux
+Zero Dependencies — pure Python, drop‑in ready
 
-• Perfect for configs, vaults, local databases, ML checkpoints, automation tools, and anything that needs safe, guaranteed writes.
+Cross‑platform — Windows, macOS, Linux
+
+Perfect for configs, vaults, local databases, ML checkpoints, automation tools, and anything that needs safe, guaranteed writes.
 
 🧠 Why AtomicLib Exists
-
 Normal Python file writes are not atomic.
 If your program crashes mid‑write, you get:
 
-• corrupted files
+corrupted files
 
-• partial writes
+partial writes
 
-• torn binary data
+torn binary data
 
-• broken configs
+broken configs
 
-• invalid checkpoints
+invalid checkpoints
 
 AtomicLib guarantees crash‑safe writes using the same strategy used by databases and secure storage systems:
 
-• write to a temp file
+write to a temp file
 
-• flush
+flush
 
-• fsync
+fsync
 
-• atomic replace
+atomic replace
 
 This ensures your file is never left in a corrupted state, even during power loss or crashes.
 
 📦 Download
+AtomicLib is distributed as a ready‑to‑use ZIP package.
 
-• AtomicLib is distributed as a ready‑to‑use ZIP package.
-
-• Purchase the full version here:  
+Purchase the full version here:  
 https://softwareprograms.sell.app/product/pyatomic
 
 💻 Quick Start
-
-• After downloading:
-
-Insert the file into your Folder.
-
-After:
-
-| from AtomicLib import file, binaryfile
-| Atomic text write/read
-
-| file.atomicwrite("config.txt", "hello world")
-| print(file.atomicread("config.txt"))
-| Atomic binary write/read
-
-| binaryfile.writebinary("data.bin", b"\x00\x01")
-| print(binaryfile.readbinary("data.bin"))
-| Atomic bytearray write/read
-
-| data = bytearray([10, 20, 30])
-| binaryfile.writebinary("buffer.bin", data)
-| print(binaryfile.readbinary("buffer.bin"))
-
-🔐 License
-
-• Perpetual Personal‑Use License
-
+Import
+python
+from AtomicLib import file, binaryfile
+Atomic text write/read
+python
+file.atomicwrite("config.txt", "hello world")
+print(file.atomicread("config.txt"))
+Atomic binary write/read
+python
+binaryfile.writebinary("data.bin", b"\x00\x01")
+print(binaryfile.readbinary("data.bin"))
+Atomic bytearray write/read
+python
+data = bytearray([10, 20, 30])
+binaryfile.writebinary("buffer.bin", data)
+print(binaryfile.readbinary("buffer.bin"))
+🔐 License — Perpetual Personal‑Use License
 You are granted a perpetual, non‑exclusive, non‑transferable license to use AtomicLib for personal, non‑commercial purposes only.
 
-• You may:
-
+You may:
 Use the software indefinitely for personal projects
 
 Modify the software privately for personal use
 
-• You may NOT:
-
+You may NOT:
 Use the software for commercial or organizational purposes
 
 Sell, rent, lease, sublicense, or redistribute the software
@@ -99,7 +89,6 @@ All rights not expressly granted remain the property of the author.
 © 2026 Smite — All Rights Reserved.
 
 🧩 Included in Download
+AtomicLib.py
 
-• AtomicLib.py
-
-• Ready‑to‑use ZIP package
+Ready‑to‑use ZIP package
