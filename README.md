@@ -2,19 +2,20 @@ AtomicLib — True Atomic File I/O for Python
 A zero‑dependency Python micro‑library providing real atomic file operations for text, bytes, binary blobs, and bytearrays.
 Built for reliability, simplicity, and correctness — no bloat, no noise, just atomicity done right.
 
-Atomic Read** — thread‑safe reads with local locks
+• Atomic Read** — thread‑safe reads with local locks
 
-Atomic Delete — safe removal without race conditions
+• Atomic Delete — safe removal without race conditions
 
-Binary Support — atomic bytes, bytearray, and binary blob I/O
+• Binary Support — atomic bytes, bytearray, and binary blob I/O
 
-Zero Dependencies — pure Python, drop‑in ready
+• Zero Dependencies — pure Python, drop‑in ready
 
-Cross‑platform — Windows, macOS, Linux
+• Cross‑platform — Windows, macOS, Linux
 
-Perfect for configs, vaults, local databases, ML checkpoints, automation tools, and anything that needs safe, guaranteed writes.
+• Perfect for configs, vaults, local databases, ML checkpoints, automation tools, and anything that needs safe, guaranteed writes.
 
 🧠 Why AtomicLib Exists
+
 Normal Python file writes are not atomic.
 If your program crashes mid‑write, you get:
 
