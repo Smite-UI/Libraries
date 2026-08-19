@@ -22,64 +22,71 @@ Perfect for configs, vaults, local databases, ML checkpoints, automation tools, 
 Normal Python file writes are not atomic.
 If your program crashes mid‑write, you get:
 
-corrupted files
+• corrupted files
 
-partial writes
+• partial writes
 
-torn binary data
+• torn binary data
 
-broken configs
+• broken configs
 
-invalid checkpoints
+• invalid checkpoints
 
 AtomicLib guarantees crash‑safe writes using the same strategy used by databases and secure storage systems:
 
-write to a temp file
+• write to a temp file
 
-flush
+• flush
 
-fsync
+• fsync
 
-atomic replace
+• atomic replace
 
 This ensures your file is never left in a corrupted state, even during power loss or crashes.
 
 📦 Download
-AtomicLib is distributed as a ready‑to‑use ZIP package.
 
-Purchase the full version here:  
+• AtomicLib is distributed as a ready‑to‑use ZIP package.
+
+• Purchase the full version here:  
 https://softwareprograms.sell.app/product/pyatomic
 
 💻 Quick Start
-After downloading:
 
-python
-from AtomicLib import file, binaryfile
-Atomic text write/read
-python
-file.atomicwrite("config.txt", "hello world")
-print(file.atomicread("config.txt"))
-Atomic binary write/read
-python
-binaryfile.writebinary("data.bin", b"\x00\x01")
-print(binaryfile.readbinary("data.bin"))
-Atomic bytearray write/read
-python
-data = bytearray([10, 20, 30])
-binaryfile.writebinary("buffer.bin", data)
-print(binaryfile.readbinary("buffer.bin"))
+• After downloading:
+
+Insert the file into your Folder.
+
+After:
+
+| from AtomicLib import file, binaryfile
+| Atomic text write/read
+
+| file.atomicwrite("config.txt", "hello world")
+| print(file.atomicread("config.txt"))
+| Atomic binary write/read
+
+| binaryfile.writebinary("data.bin", b"\x00\x01")
+| print(binaryfile.readbinary("data.bin"))
+| Atomic bytearray write/read
+
+| data = bytearray([10, 20, 30])
+| binaryfile.writebinary("buffer.bin", data)
+| print(binaryfile.readbinary("buffer.bin"))
+
 🔐 License
-Perpetual Personal‑Use License
+
+• Perpetual Personal‑Use License
 
 You are granted a perpetual, non‑exclusive, non‑transferable license to use AtomicLib for personal, non‑commercial purposes only.
 
-You may:
+• You may:
 
 Use the software indefinitely for personal projects
 
 Modify the software privately for personal use
 
-You may NOT:
+• You may NOT:
 
 Use the software for commercial or organizational purposes
 
@@ -95,6 +102,7 @@ All rights not expressly granted remain the property of the author.
 © 2026 Smite — All Rights Reserved.
 
 🧩 Included in Download
-AtomicLib.py
 
-Ready‑to‑use ZIP package
+• AtomicLib.py
+
+• Ready‑to‑use ZIP package
